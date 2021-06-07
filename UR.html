@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>URAVNENIE</title>
+		<meta charset="utf-8">
+		</head>
+	<body>
+		<script>
+			var a = prompt("Введите А", '');
+			var b = prompt("Введите В", '');
+			var c = prompt("Введите С", '');
+			var d = b*b-4*a*c;
+			if (a*b*c != 0) {
+				if (d >= 0) {
+					alert((-b+Math.sqrt(d))/2/a);
+					alert((-b-Math.sqrt(d))/2/a);
+				}
+				else {
+					alert((-b+Math.sqrt(-d))/a/2 + '+' + 1/2/a + 'i');
+					alert((-b+Math.sqrt(-d))/a/2 + '+' + 1/2/a - 'i');
+				}
+			}
+			if(a!=0 && b!=0 && c==0){
+				alert(0);
+				alert(-b/a);
+			}
+			if(a!=0 && b==0 &&c!=0){
+				if(-c/a>=0){
+					alert(sqrt(-c/a));
+					alert(-sqrt(-c/a));
+				}
+				else{
+					alert(sqrt(c/a)+'i');
+					alert(-sqrt(c/a)+'i');
+				}
+			}
+			if(a==0 && b!=0 && c!=0){
+				alert(-c/b);
+			}
+			if (a!=0 && b==0 && c==0){
+				alert(0);
+			}
+			if (a==0 && b!=0 && c==0){
+				alert(0);
+			}
+			if (c!=0 && a==0 && b==0){
+				alert('Нет решений');
+			}
+			if(a==0 && b==0 && c==0){
+				alert('ЛЮБОЕ');
+			}
+
+
+
+		</script>
+
+	 </body>
+</html>
