@@ -12,26 +12,26 @@
 			var d = b*b-4*a*c;
 			if (a*b*c != 0) {
 				if (d >= 0) {
-					alert((-b+Math.sqrt(d))/2/a);
-					alert((-b-Math.sqrt(d))/2/a);
+					alert(((-b+Math.sqrt(d))/2/a).toFixed(3));
+					alert(((-b-Math.sqrt(d))/2/a).toFixed(3));
 				}
 				else {
-					alert((-b+Math.sqrt(-d))/a/2 + '+' + 1/2/a + 'i');
-					alert((-b+Math.sqrt(-d))/a/2 + '+' + 1/2/a - 'i');
+					alert((-b/2/a)+'+'+((Math.sqrt(-d))/a/2).toFixed(3) + '*i');
+					alert((-b/a/2)+'-'+((Math.sqrt(-d))/a/2).toFixed(3) + '*i');
 				}
 			}
 			if(a!=0 && b!=0 && c==0){
 				alert(0);
-				alert(-b/a);
+				alert((-b/a)).toFixed(3);
 			}
 			if(a!=0 && b==0 &&c!=0){
 				if(-c/a>=0){
-					alert(sqrt(-c/a));
-					alert(-sqrt(-c/a));
+					alert((sqrt(-c/a)).toFixed(3));
+					alert((-sqrt(-c/a)).toFixed(3));
 				}
 				else{
-					alert(sqrt(c/a)+'i');
-					alert(-sqrt(c/a)+'i');
+					alert((sqrt(c/a)).toFixed(3)+'i');
+					alert((-sqrt(c/a)).toFixed(3)+'i');
 				}
 			}
 			if(a==0 && b!=0 && c!=0){
