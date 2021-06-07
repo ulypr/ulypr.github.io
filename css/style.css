@@ -1,0 +1,77 @@
+
+body {
+    padding:0;
+    margin:0;
+    overflow:hidden;
+  height: 600px;
+}
+canvas {
+    padding:0;
+    margin:0;
+}
+div.btnbg {
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+#git
+{
+ position: absolute;
+  z-index: 2;
+  margin: 40px auto;
+  margin-left: 400px;
+  width:50px;
+  height:50px;
+}
+
+#vk
+{
+  position: absolute;
+  z-index: 2;
+  margin: 40px auto;
+  margin-left: 520px;
+  width:50px;
+  height:50px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+
+}
+
+.panel{
+  
+  position: absolute;
+  z-index:3;
+  width:1000px;
+  height:0px;
+ 
+  top:20%;
+  left:13%;
+  margin: auto;
+  padding:20px;
+  
+}
+.text-panel
+{
+  font: italic small-caps bold 16px/2 cursive;
+  font-size:1.0em;
+  text-align: center;
+  padding: 2px;
+}
+.button-panel
+{
+  background:rgb(167, 166, 166);
+  padding: 35px;
+  width:50px ;
+  height:50px ;
+  margin: auto;
+}
+
+
+
+
